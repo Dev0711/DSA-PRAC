@@ -13,14 +13,14 @@ public class MergeSort {
     }
 
     public static void mergeSortHelper(int[] arr, int[] temp, int left, int right){
-        if(left>= right){
+        if(left>= right){ // when a single element remains then do not divide further for example (arr,1,1) which represents the single array in index 1. where the left and right at the same position
             return;
         }
 
         int mid = left + (right -left) /2;
 
-        mergeSortHelper(arr,temp,left,mid); // sort left
-        mergeSortHelper(arr,temp, mid+1, right); //sort right
+        mergeSortHelper(arr,temp,left,mid); // sort left  //recursively sort left part
+        mergeSortHelper(arr,temp, mid+1, right); //sort right  // recursively sort right part
         merge(arr,temp, left, mid, right); // then merge
 
     }
