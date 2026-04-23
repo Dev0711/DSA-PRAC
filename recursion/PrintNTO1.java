@@ -12,5 +12,6 @@ public class PrintNTO1 {
         int i = 4;
         int n = 10;
         fun(n,i);
+        fun(n,i);
     }
 }
