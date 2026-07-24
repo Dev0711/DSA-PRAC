@@ -29,7 +29,7 @@ public class QuickSort {
 
 
         }
-        int temp = arr[partitionIndex + 1];
+        int temp = arr[partitionIndex + 1]; 
         arr[partitionIndex + 1] = arr[high];
         arr[high] = temp;
 
